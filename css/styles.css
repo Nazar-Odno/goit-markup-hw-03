@@ -141,6 +141,11 @@ button {
   color: var(--primary-color-heading);
 }
 
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -252,6 +257,10 @@ button {
   margin-bottom: 8px;
 }
 
+.gall-works-section-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .header-two {
   font-weight: 700;
   font-size: 36px;
@@ -265,9 +274,10 @@ button {
 
 .section-works-list {
   display: flex;
-  align-items: center;
-  padding-bottom: 120px;
+}
 
+.section-works {
+  padding-bottom: 120px;
 }
 
 .section-works-list-item:not(:last-child) {
@@ -291,6 +301,7 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
 }
+
 .employee-card-content {
   padding: 16px 32px;
 }
@@ -305,6 +316,7 @@ border-radius: 0px 0px 4px 4px;
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0px;
 }
 
 .footer-container {
@@ -313,13 +325,21 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .description-footer {
-  margin-top: 8px;
   max-width: 264px;
+}
+
+.logo-link-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.portfolio-services {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolio-button-list {
   display: flex;
-  padding-top: 96px;
   padding-bottom: 72px;
   justify-content: center;
 }
@@ -336,6 +356,8 @@ border-radius: 0px 0px 4px 4px;
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
+  height: 48px;
+  min-width: 69px;
 
   border: 1px solid #E7E9FC;
   border-radius: 4px;
@@ -344,8 +366,7 @@ border-radius: 0px 0px 4px 4px;
   }
 
 .portfolio-button-item:not(:last-child) {
-margin-right: 24px;
-
+  margin-right: 24px;
 }
 
 .portfolio-button:hover,
@@ -353,7 +374,8 @@ margin-right: 24px;
   background-color: var(--accent-color);
   color: var(--background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid transparent;
 }
 
 .portfolio-heading-two {
@@ -381,8 +403,9 @@ border-radius: 4px;
 }
 
 .portfolio-card-content {
-  padding: 32px 0px 32px 16px;
+  padding: 32px 16px;
   border: 1px solid #E7E9FC;
+  border-top: none;
 }
 
 .portfolio-heading-two {
